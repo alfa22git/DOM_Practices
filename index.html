@@ -10,38 +10,79 @@
 <body>
     <header>
         <h1>Welcome to my DOM.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora minus iusto neque?</p>
     </header>
 
     <main>
-        <h1> My awesome DOM de baba</h1>
 
-        <ul>
-            <li>jalali set</li>
-            <li>shafayert set</li>
-            <li>bonobash set</li>
-            <li>DOM set</li>
-            <li>DOM Practices</li>
-        </ul>
+        <section>
+            <h1> My awesome DOM de baba</h1>
+
+            <ul>
+                <li>jalali set</li>
+                <li>shafayert set</li>
+                <li>bonobash set</li>
+                <li>DOM set</li>
+                <li>DOM Practices</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li class="fruit-name">Carrot</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="places-title">Places I like most</h1>
+            <ul>
+                <li class="place-name">Soondarban</li>
+                <li class="place-name">Bandorban</li>
+                <li class="place-name">Kataban</li>
+                <li class="place-name">Shalbon</li>
+            </ul>
+        </section>
 
     </main>
     <script src="js/dom.js"></script>
 
     <script>
         const liCollection = document.getElementsByTagName('li');
-       console.log(liCollection);
+      // console.log(liCollection);
        for(const li of liCollection){
-        console.log(li);
-        console.log(li.innerText);
+      //  console.log(li);
+      //  console.log(li.innerText);
        }
 
        const allHeadings = document.getElementsByTagName('h1');
-       console.log(allHeadings);
+      // console.log(allHeadings);
        for(const h1 of allHeadings){
-        console.log(h1);
-        console.log(h1.innerText);
+      //  console.log(h1);
+       // console.log(h1.innerText);
        }
 
-       console.log(document.getElementsByTagName('li'));
+       //console.log(document.getElementsByTagName('li'));
+
+
+      const placeName = document.getElementsByClassName('place-name');
+      //console.log(placeName);
+      for(const place of placeName){
+        //console.log(place.innerText);
+      }
+
+      const fruitName = document.getElementsByClassName('fruit-name');
+      for(const fruit of fruitName){
+        //console.log(fruit.innerText);
+      }
+      
+
+       //document.getElementById('places-title').innerText = 'My Tour List'
+
+
+       //document.getElementById('places-title').innerText
     </script>
 </body>
 </html>
