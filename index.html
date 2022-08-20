@@ -13,7 +13,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora minus iusto neque?</p>
     </header>
 
-    <main>
+    <main id = "main-container">
 
         <section>
             <h1> My awesome DOM de baba</h1>
@@ -38,7 +38,7 @@
 
         <section id="places-container" class="yellow-bg">
             <h1 id="places-title">Places I like most</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="place-name">Soondarban</li>
                 <li class="place-name">Bandorban</li>
                 <li class="place-name">Kataban</li>
@@ -48,7 +48,9 @@
 
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
     <script src="js/styleinjs.js"></script>
+   
 
     <script>
         const liCollection = document.getElementsByTagName('li');
