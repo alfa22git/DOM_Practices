@@ -14,5 +14,6 @@ for(const section of sections){
 // placesContainer.style.backgroundColor = 'lightblue';
 
 
-const placesContainer = document.getElementById('place-container');
-placesContainer.classList.add('yellow-bg');
+ //const placesContainer = document.getElementById('place-container');
+// placesContainer.classList.add('yellow-bg');
+
